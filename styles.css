@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #1f1f1f, #2c3e50); /* Dark professional gradient */
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+/* Title */
+.main-title {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+.team {
+    background: linear-gradient(to bottom, #34495e, #2c3e50); /* Dark sleek gradient */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    color: #ffffff;
+}
+
+.players-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-section {
+    margin: 10px;
+}
+
+.point-button, .miss-button {
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.point-button {
+    background: linear-gradient(to right, #16a085, #1abc9c); /* Elegant teal */
+    color: white;
+}
+
+.miss-button {
+    background: linear-gradient(to right, #e74c3c, #c0392b); /* Sleek red */
+    color: white;
+}
+
+.point-button:hover, .miss-button:hover {
+    transform: scale(1.05);
+}
+
+/* Game Info */
+.game-info {
+    margin-top: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Pickleball Court */
+.pickleball-court {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(to right, #34495e, #2c3e50); /* Sleek dark blue-gray court */
+    margin: 30px auto;
+    border: 5px solid #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Court Sides */
+.court-side {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+/* Net */
+.court-net {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the net vertically */
+    right: 50%; /* Center the net vertically */
+    width: 6px; /* Make it a vertical line */
+    background-color: #ffffff; /* White color */
+    transform: translateX(-50%);
+}
+
+/* Net Posts */
+.net-post {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 80px;
+    background: linear-gradient(to bottom, #2c3e50, #1f1f1f); /* Dark metallic effect */
+    transform: translateY(-50%);
+}
+
+.left-post {
+    left: 0;
+}
+
+.right-post {
+    right: 0;
+}
+
+/* Kitchen Line - Vertical */
+.kitchen-line {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the kitchen line */
+    bottom: 0;
+    width: 3px; /* Vertical line width */
+    background-color: white;
+    border-left: 2px dashed #ecf0f1; /* Dashed vertical line */
+    transform: translateX(-50%);
+}
+
+/* Non-Volley Zone - Vertical */
+.non-volley-zone {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the non-volley zone */
+    right: 50%; /* Adjust to the center */
+    width: 10px; /* Set width to make it visible as a vertical area */
+    height: 100%; /* Full height */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    transform: translateX(-50%);
+}
+
+/* Service Areas */
+.service-area {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.left-service {
+    left: 0;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.right-service {
+    right: 0;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Player Positions */
+.player {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #f1c40f, #f39c12); /* Gold gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Team A Players */
+#teamA-player1 {
+    top: 30%;
+    left: 25%;
+}
+
+#teamA-player2 {
+    top: 30%;
+    right: 25%;
+}
+
+/* Team B Players */
+#teamB-player1 {
+    bottom: 30%;
+    left: 25%;
+}
+
+#teamB-player2 {
+    bottom: 30%;
+    right: 25%;
+}
+
+/* Controls */
+.controls {
+    margin-top: 20px;
+}
+
+.update-button {
+    background: linear-gradient(to right, #2980b9, #6dd5fa); /* Deep blue gradient */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.update-button:hover {
+    transform: scale(1.05);
+}
